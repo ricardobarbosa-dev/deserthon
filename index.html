@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Multistream - Deserthon</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://deserthon.streamerkit.net/favicon-32.png" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700;9..144,900&family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+  <header class="app-header px-4 py-3 flex items-center justify-around gap-3">
+    <div class="flex items-center gap-3 min-w-0">
+      <img src="https://deserthon.streamerkit.net/crest.png" alt="Logo" class="brand-mini">
+      <div class="min-w-0">
+        <h1 class="font-display text-lg sm:text-xl font-bold tracking-tight truncate">Multistream Deserthon</h1>
+        <p class="text-xs" style="color:var(--muted)">
+          <a href="https://deserthon.streamerkit.net/" target="_blank" rel="noopener" style="color:var(--sun)"><em>ver mapa
+            ao vivo</em></a>
+        </p>
+      </div>
+    </div>
+    <div class="flex items-center gap-2 flex-wrap justify-end">
+      <label for="layoutSelect" class="text-xs hidden sm:inline" style="color:var(--muted)">Layout</label>
+      <select id="layoutSelect" class="icon-btn">
+        <option value="padrao">Miniaturas embaixo</option>
+        <!-- <option value="lateral">Miniaturas na lateral</option> -->
+        <option value="amplo">Chat lateral grande</option>
+      </select>
+      <button id="reloadAll" class="icon-btn">↻ Recarregar todos</button>
+    </div>
+  </header>
+
+  <main class="px-3 sm:px-4 py-4 max-w-[1380px] mx-auto ">
+    <div id="grid" class="streams-grid"></div>
+  </main>
+
+  <footer class="px-4 py-12 text-center text-xs max-w-2xl mx-auto" style="color:var(--muted)">
+    <p>© 2026 <a href="https://streamerkit.net/" target="_blank" rel="noopener"
+        style="color:var(--sun)">Streamerkit</a>. Todos os direitos reservados.
+    </p>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+</body>
+
+</html>
